@@ -13,7 +13,8 @@ body{
     padding: 0 30px;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
-    
+    /* position: fixed;
+    width: 85%; */
 }
 .col-1{
     width: 85%;
@@ -31,8 +32,6 @@ body{
     display: inline-block;
     padding: 10px;
     list-style: none;
-   
-    
 }
 .navbar li a{
     font-size: 14px;
@@ -45,7 +44,6 @@ body{
     color: #fd7e14;
 }
 .homepg1{
-    width: 100%;
     height: 100vh;
     /* border: 1px solid black; */
     background-image: url('img/banner/banner-bg.jpg');
@@ -108,6 +106,37 @@ body{
 }
 
 /****************************** BANNER SECTION END ************************************/
+
+.homepg2{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 8%;
+    padding: 35px 20px;
+    line-height: 0%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(70, 70, 70, 0.281);
+
+}
+.homepg2 .fa-solid{
+    font-size: 35px;
+}
+.data1:hover .fa-solid,.data2:hover .fa-solid,.data3:hover .fa-solid,.data4:hover .fa-solid{
+color: #c1c0be;
+}
+
+.homepg2 h5{
+    font-size: 22px;
+   font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+.homepg2 .data1, .data2, .data3{
+    border-right: 1px solid #6c757d9d;
+    padding-right: 50px;
+}
+
+/* ------------- SHIPPING PROCESS END ---------------- */
+
 /****************************** ITEMS SECTION START ************************************/
 .homepg3{
     border:1px solid green;
@@ -120,3 +149,6 @@ body{
 
 
 /****************************** ITEMS SECTION END ************************************/
+
+/* ------------- SHIPPING PROCESS START ---------------- */
+
