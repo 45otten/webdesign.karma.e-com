@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&family=Roboto+Condensed:ital@1&display=swap');
 
 body{
     margin: 0;
     padding: 0;
 }
+
+/****************************** BANNER SECTION START ************************************/
+
 .banner{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 30px;
     background-color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.100);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
     
 }
 .logo img{
@@ -34,6 +38,7 @@ body{
 }
 .homepg1{
     height: 100vh;
+    /* border: 1px solid black; */
     background-image: url('img/banner/banner-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -65,5 +70,25 @@ body{
    font-size: 3rem;
    line-height: 3rem;
 }
-/* =================== Bannaer Section End ======================== */
+.homepg1ctn2 p{
+    font-family: "Robot",sans-serif;
+    color: gray;
+    line-height: 1.5rem;
+}
+.homepg1ctn2 button{
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    width: 55px;
+    background:linear-gradient(135deg,#ffc107,#fd7e14);
+    color: white;
+    font-size: large;
+}
+.homepg1ctn2 span{
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 10px;
+}
 
+/****************************** BANNER SECTION END ************************************/
