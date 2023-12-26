@@ -13,16 +13,8 @@ body{
     padding: 0 30px;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
-    /* position: fixed;
-    width: 85%; */
-}
-.col-1{
+    position: fixed;
     width: 85%;
-    height: inherit;
-}
-.col-2{
-    display: flex;
-    justify-content: center;
 }
 .logo img{
     padding: 10px;
