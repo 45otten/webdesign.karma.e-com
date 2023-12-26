@@ -13,7 +13,8 @@ body{
     padding: 0 30px;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
-    
+    position: fixed;
+    width: 85%;
 }
 .logo img{
     padding: 10px;
@@ -92,3 +93,34 @@ body{
 }
 
 /****************************** BANNER SECTION END ************************************/
+
+/* ------------- SHIPPING PROCESS START ---------------- */
+.homepg2{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 8%;
+    padding: 35px 20px;
+    line-height: 0%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(70, 70, 70, 0.281);
+
+}
+.homepg2 .fa-solid{
+    font-size: 35px;
+}
+.data1:hover .fa-solid,.data2:hover .fa-solid,.data3:hover .fa-solid,.data4:hover .fa-solid{
+color: #c1c0be;
+}
+
+.homepg2 h5{
+    font-size: 22px;
+   font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+.homepg2 .data1, .data2, .data3{
+    border-right: 1px solid #6c757d9d;
+    padding-right: 50px;
+}
+
+/* ------------- SHIPPING PROCESS END ---------------- */
