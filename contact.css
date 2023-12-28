@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&family=Roboto+Condensed:ital@1&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/****************************** BANNER SECTION START ************************************/
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
+    margin: 35px auto 0;
+    max-width: 1100px;
+}
+.logo img{
+    padding: 10px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 10px;
+    list-style: none; 
+}
+.navbar li a{
+    font-size: 14px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+.navbar li a:hover{
+    color: #fd7e14;
+}
+.contact-page1{
+    height: 55vh;
+    background-image: url('img/banner/common-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    z-index: -2;
+    display: flex;
+}
+.text{
+    float: right;
+    margin-right: 18%;
+    margin-top: 7%;
+}
+
+.text h1{
+    font-size: 36px;
+    font-family: "Poppins",sans-serif;
+    color: white;
+    line-height: 0;
+    font-weight: 600;
+}
+.text a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/****************************** BANNER SECTION END ************************************/
+
+/****************************** MAP SECTION START ************************************/
+.map{
+    justify-content: center;
+    display: flex;
+    height: 500px;
+}
+.map iframe{
+    height: 80%;
+    width: 80%;
+    margin-top: 8%;
+}
+/****************************** MAP SECTION END ************************************/
+
+/****************************** CONTACT SECTION Start ************************************/
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 0 ;
+}
+.text1 i{
+    color: #ffba00;
+    margin-right: 10px;
+}
+.text1 h2{
+    font-size: 18px;
+    font-family: "Popins", sans-serif;
+}
+.text1 p{
+    margin-left: 35px;
+    margin-bottom: 16%;
+}
+
+.text2 input{
+    padding: 10px 200px 14px 10px ;
+    margin-bottom: 20px;
+}
+
+.text3 input{
+    padding: 8px 200px 150px 10px;
+}
+.text3 button{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+        float: right;
+        margin-top: 20px;
+        padding: 15px 30px;
+        color: #fff;
+        background-color: #ffba00;
+        border: 2px solid #ffba00;
+}
+/****************************** CONTACT SECTION END ************************************/
+
