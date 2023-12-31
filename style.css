@@ -531,3 +531,188 @@ body {
 }
 
 /***************************** offers section end ******************************/
+
+/**************************** BRNADS SECTION START *****************************/
+
+.brands{
+    height: 150px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+.brands img{
+    width: 150px;
+    height: 90px;
+    align-self: center;
+    opacity: 0.5;
+    transition: 0.4s ease-in-out;
+}
+
+.brands img:hover{
+    opacity: 1;
+}
+
+/**************************** BRNADS SECTION END *********************************/
+
+/**************************** DEALS SECTION START *********************************/
+.deals{
+    height: auto;
+    border: 1px solid green;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.deals-list{
+    border: 1px solid black;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.deals-item-list{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+}
+.deal-items{
+    width: 250px;
+    height: 90px;
+    border: 1px solid orange;
+}
+
+.day-deal{
+    width: calc(100% - 60%);
+    height: 100%;
+    border: 1px solid red;
+    margin: 5px 0 !important;
+}
+.day-deal img{
+    width: 100%;
+    height: 285px;
+    margin-top: 7px;
+}
+/**************************** DEALS SECTION END ***********************************/
+
+/**************************** Footer START ***********************************/
+
+footer{
+    height: 400px;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+}
+footer h3{
+    color: white;
+    margin-bottom: -5px;
+}
+footer input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 190px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 700;
+}
+footer .footerctn button{
+    font-family: "Poppins",sans-serif;
+    padding: 10px;
+    border: none;
+    margin-left: -5px;
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+    width: 40px;
+    color: #fff;
+}
+footer .footerctn button::before {
+    content: "";
+    width: 70px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left: 15px;
+    left: 65%;
+    top: 50%;
+    position: absolute;
+    transform: skew(-40deg);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+footer .footerctn button:hover::before {
+    left: 100%;
+    margin-left: 10px;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-100px);
+    transform: skew(-40deg);
+}
+
+.footer1{
+    height:60%;
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    column-gap: 20px;
+}
+.footer1 .footerctn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.footer1 .footerctn p{
+    font-size: 15px;
+}
+.insta-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 5px;
+    row-gap: 2px;
+    width: 100%;
+    height: 45%;
+    margin-top: 20px;
+}
+.footer1 .footerctn .insta-pics{
+    width: 100%;
+    height: 90%;
+}
+.footer1 .footerctn .insta-pics img{
+    width: 100%;
+    height: auto;
+}
+.footer1 .footerctn .social-icons{
+    width: 100%;
+    height: 50px;
+}
+
+.footer1 .footerctn .social-icons .fa-brands{
+    margin-right: 10px;
+    color: white;
+    transition: 0.4s ease-in;
+}
+.footer1 .footerctn .social-icons .fa-brands:hover{
+ color:  #fc9846;
+}
+footer p{
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: #ffc107;
+}
+footer a:visited{
+    color: #ffc107;
+}
+
+/**************************** Footer END *************************************/
