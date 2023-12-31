@@ -561,13 +561,21 @@ body {
 /**************************** DEALS SECTION START *********************************/
 .deals{
     height: auto;
-    border: 1px solid green;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    font-family: "Robot",sans-serif;
+    text-align: center;
+}
+.deals h3{
+    font-size: 35px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.deals p{
+    font-size: 17px;
 }
 .deals-list{
-    border: 1px solid black;
     height: 300px;
     display: flex;
     flex-direction: row;
@@ -585,13 +593,31 @@ body {
 .deal-items{
     width: 250px;
     height: 90px;
-    border: 1px solid orange;
+    display: flex;
+    gap: 5px;
+}
+.deal-items div{
+    line-height: 16px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+}
+.deal-items div h3{
+    font-size: 15px;
+    transition: 0.5s ease-in;
+}
+.deal-items:hover h3{
+    color:#ffc107;
+}
+.deal-items div p{
+    font-size: 15px;
+}
+.deal-items div p span{
+    color: #828bb2;
 }
 
 .day-deal{
     width: calc(100% - 60%);
     height: 100%;
-    border: 1px solid red;
     margin: 5px 0 !important;
 }
 .day-deal img{
@@ -690,6 +716,10 @@ footer .footerctn button:hover::before {
 .footer1 .footerctn .insta-pics img{
     width: 100%;
     height: auto;
+    transition: 0.3s ease-in-out;
+}
+.footer1 .footerctn .insta-pics img:hover{
+    transform: scale(105%);
 }
 .footer1 .footerctn .social-icons{
     width: 100%;
