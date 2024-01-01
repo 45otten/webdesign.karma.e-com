@@ -10,6 +10,7 @@ body {
     width: 85%;
 }
 
+
 .col-2 {
     display: flex;
     justify-content: center;
@@ -29,8 +30,9 @@ body {
     padding: 0 30px;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
-    /* position: fixed;
-    width: 85%; */
+    z-index: 10 !important;
+    position: fixed;
+    width: 85%;
 }
 
 .logo img {
@@ -42,7 +44,6 @@ body {
     padding: 10px;
     list-style: none;
 }
-
 .navbar li a {
     font-size: 14px;
     color: black;
@@ -50,9 +51,38 @@ body {
     font-weight: 500;
     text-decoration: none;
 }
-
 .navbar li a:hover {
     color: #fd7e14;
+}
+.navbar i{
+    color: #000;
+}
+.navbar i:hover{
+    color: #fd7e14;
+    transition: 0.4s ease-in-out;
+}
+.sub-menu{
+    display: none;
+    flex-direction: column;
+}
+.navbar ul li{
+    color: #fd7e14;
+    background-color: white;
+}
+.navbar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -90px;
+}
+.navbar ul li:hover .sub-menu li{
+    display: block;
+    margin: 0px;
+}
+.sub-menu li a:hover{
+    background-color: #fd7e14;
+    color: #fff;
+    padding: 10px;
 }
 
 .homepg1 {
@@ -95,6 +125,7 @@ body {
 
 .swiper .swiper-wrapper .swiper-slide {
     display: flex;
+    margin-top: 70px;
 }
 
 .homepg1ctn2 h1 {
@@ -356,6 +387,7 @@ body {
 /**************************** offers section start ******************************/
 .homepg5 {
     height: 90vh;
+    margin-top: 65px;
 }
 
 .homepg5 .homepg5ctn1,
