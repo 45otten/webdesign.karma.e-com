@@ -6,15 +6,28 @@ body{
 }
 
 /****************************** BANNER SECTION START ************************************/
-
+.col-1{
+    width: 85%;
+    padding: 10px 0;
+    /* height: inherit; */
+}
+.col-2{
+    display: flex;
+    justify-content: center;
+}
+.col-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .banner{
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
-    position: fixed;
-    width: 85%;
+    /* position: fixed;
+    width: 85%; */
 }
 .logo img{
     padding: 10px;
@@ -41,6 +54,7 @@ body{
     background-image: url('img/banner/banner-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    /* background-attachment: fixed; */
     background-size: cover;
     display: flex;
     /* justify-content: center; */
@@ -99,6 +113,8 @@ body{
 
 /****************************** BANNER SECTION END ************************************/
 
+/* ------------- SHIPPING PROCESS START ---------------- */
+
 .homepg2{
     display: flex;
     justify-content: space-evenly;
@@ -108,18 +124,19 @@ body{
     line-height: 0%;
     background-color: white;
     box-shadow: 0 0 10px rgba(70, 70, 70, 0.281);
-
+    
 }
 .homepg2 .fa-solid{
     font-size: 35px;
 }
 .data1:hover .fa-solid,.data2:hover .fa-solid,.data3:hover .fa-solid,.data4:hover .fa-solid{
 color: #c1c0be;
+transition: 0.5s ease-in-out;
 }
 
 .homepg2 h5{
     font-size: 22px;
-   font-weight: 500;
+    font-weight: 500;
     font-family: "Poppins", sans-serif;
 }
 .homepg2 .data1, .data2, .data3{
@@ -130,17 +147,148 @@ color: #c1c0be;
 /* ------------- SHIPPING PROCESS END ---------------- */
 
 /****************************** ITEMS SECTION START ************************************/
-.homepg3{
-    border:1px solid green;
+.homepg3 {
+    /* border: 1px solid green; */
     height: 450px;
     width: 100%;
-}
-.homepg3ctn{
-    border: 1px solid yellow;
+    padding: 10px 0;
 }
 
+.homepg3ctn {
+    /* border: 1px solid yellow; */
+    display: flex;
+    gap: 10px;
+    position: relative;
+    height: auto;
+}
 
+.homepg3ctn .img1,
+.homepg3ctn .img2,
+.homepg3ctn .img3{
+    width: 100%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.homepg3ctn .img1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.homepg3ctn .img1 img{
+    height: 50%;
+}
+.homepg3ctn .img1 .img1-1{
+    height: 60%;
+}
+.homepg3ctn .img3 {
+    width: 35%;
+}
+.homepg3ctn .img2 img{
+    height: 48%;
+}
+.homepg3ctn .img2 .img2-2{
+    height: 49%;
+}
+.homepg3ctn .img2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.homepg3ctn .img1 .img1-1:hover,.img1-2:hover{
+    /* background-image: linear-gradient('to top',rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%); */
+}
 /****************************** ITEMS SECTION END ************************************/
 
-/* ------------- SHIPPING PROCESS START ---------------- */
+/****************************** LATEST PRODUCTS START ***********************************/
+.homepg4{
+    width: 100%;
+    height: 700px;
+    border: 2px solid purple;
+    flex-direction: column;
+    align-items: center;
+}
+.homepg4ctn1{
+    border: 1px solid green;
+    text-align: center;
+}
+.homepg4ctn2{
+    border: 1px solid red;
+    display: flex;
+    gap: 5px;
+    /* text-align: center; */
+}
+.homepg4ctn2 .img{
+    height: 350px;
+    border: 1px solid purple;
+    width: 25%;
+    line-height: 17px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    color: #404453;
+    overflow: hidden;
+}
+.homepg4ctn2 .img p{
+    line-height: 1px;
+}
+.homepg4ctn2 .img h3{
+    font-size: 15px;
+}
+.homepg4ctn2 .img .fa-solid{
+    line-height: 1px;
+}
+.homepg4ctn2 .img .img4-1,
+.img .img4-2,
+.img .img4-3,
+.img .img4-4{
+    width: 100%;
+    border: 1px solid black;
+    height: 65%;
+}
+.homepg4ctn2 .img .img4-1 img,
+.img .img4-2 img,
+.img .img4-3 img,
+.img .img4-4 img{
+    width: 100%;
+    height: 100%;
+}
+.homepg4ctn2 .img button{
+    color: white;
+    background-color: #828bb2;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 2px;
+}
+.homepg4ctn2 .img button:hover{
+    background:linear-gradient(135deg,#ffc107,#fd7e14);
+    /* margin-right: 10px; */
+}
+.homepg4ctn2 .img span{
+    color: gray;
+}
+.homepg4ctn2 .img .btntxt1,.btntxt2,.btntxt3,.btntxt4{
+    color: black;
+    font-weight: 700;
+    font-size: 12px;
+    position: absolute;
+    margin-right: 3px;
+    margin-top: 13px;
+    /* left: 0; */
+    /* bottom: 0; */
+    /* opacity: 1; */
+}
+.homepg4ctn2 .img button:hover .btntxt1{
+    opacity: 1;
+    margin-right: 5px;
+}
+
+
+/****************************** LATEST PRODUCTS END ************************************/
+
+
 
