@@ -44,45 +44,61 @@ body {
     padding: 10px;
     list-style: none;
 }
+
 .navbar li a {
     font-size: 14px;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     text-decoration: none;
+    font-family: "Poppins",sans-serif;
 }
+
 .navbar li a:hover {
     color: #fd7e14;
 }
-.navbar i{
+
+.navbar i {
     color: #000;
 }
-.navbar i:hover{
+
+.navbar i:hover {
     color: #fd7e14;
-    transition: 0.4s ease-in-out;
 }
-.sub-menu{
+
+.sub-menu {
     display: none;
     flex-direction: column;
+    margin-top: 10px;
+    background: #fff;
 }
-.navbar ul li{
-    color: #fd7e14;
-    background-color: white;
+.sub-menu ul li{
+    padding: 15px 25px;
+    border-bottom: 1px solid #6c6e7463;
 }
-.navbar ul li:hover .sub-menu{
+.sub-menu ul li a{
+    font-weight: 700;
+    color: #fd7e14 !important;
+}
+.sub-menu ul{
+    padding-inline-start: 0 ;
+}
+
+.navbar ul li:hover .sub-menu {
     display: block;
     position: absolute;
-    margin-top: 5px;
-    margin-left: -90px;
 }
-.navbar ul li:hover .sub-menu li{
+
+.navbar ul li:hover .sub-menu li {
     display: block;
-    margin: 0px;
 }
-.sub-menu li a:hover{
-    background-color: #fd7e14;
-    color: #fff;
-    padding: 10px;
+
+.sub-menu li:hover{
+    background: linear-gradient(135deg,#ffc107,#fd7e14);
+    transition: 0.5s ease-in-out !important;
+}
+.sub-menu li:hover a{
+    color: #fff !important;
 }
 
 .homepg1 {
@@ -567,7 +583,7 @@ body {
 
 /**************************** BRNADS SECTION START *****************************/
 
-.brands{
+.brands {
     height: 150px;
     margin: 30px 0;
     display: flex;
@@ -577,7 +593,7 @@ body {
     padding: 30px 0;
 }
 
-.brands img{
+.brands img {
     width: 150px;
     height: 90px;
     align-self: center;
@@ -585,104 +601,119 @@ body {
     transition: 0.4s ease-in-out;
 }
 
-.brands img:hover{
+.brands img:hover {
     opacity: 1;
 }
 
 /**************************** BRNADS SECTION END *********************************/
 
 /**************************** DEALS SECTION START *********************************/
-.deals{
+.deals {
     height: auto;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    font-family: "Robot",sans-serif;
+    font-family: "Robot", sans-serif;
     text-align: center;
 }
-.deals h3{
+
+.deals h3 {
     font-size: 35px;
     margin-bottom: 0;
     margin-top: 0;
 }
-.deals p{
+
+.deals p {
     font-size: 17px;
 }
-.deals-list{
+
+.deals-list {
     height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
 }
-.deals-item-list{
+
+.deals-item-list {
     width: 70%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     row-gap: 5px;
     column-gap: 5px;
 }
-.deal-items{
+
+.deal-items {
     width: 250px;
     height: 90px;
     display: flex;
     gap: 5px;
 }
-.deal-items div{
+
+.deal-items div {
     line-height: 16px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
-.deal-items div h3{
+
+.deal-items div h3 {
     font-size: 15px;
     transition: 0.5s ease-in;
 }
-.deal-items:hover h3{
-    color:#ffc107;
+
+.deal-items:hover h3 {
+    color: #ffc107;
 }
-.deal-items div p{
+
+.deal-items div p {
     font-size: 15px;
 }
-.deal-items div p span{
+
+.deal-items div p span {
     color: #828bb2;
 }
 
-.day-deal{
+.day-deal {
     width: calc(100% - 60%);
     height: 100%;
     margin: 5px 0 !important;
 }
-.day-deal img{
+
+.day-deal img {
     width: 300px;
     height: 285px;
     margin-top: 7px;
 }
+
 /**************************** DEALS SECTION END ***********************************/
 
 /**************************** Footer START ***********************************/
 
-footer{
+footer {
     height: 400px;
     background-color: black;
     flex-direction: column;
     align-items: center;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-footer h3{
+
+footer h3 {
     color: white;
     margin-bottom: -5px;
 }
-footer input{
+
+footer input {
     border: none;
     outline: none;
     padding: 10px;
     width: 190px;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
 }
-footer .footerctn button{
-    font-family: "Poppins",sans-serif;
+
+footer .footerctn button {
+    font-family: "Poppins", sans-serif;
     padding: 10px;
     border: none;
     margin-left: -5px;
@@ -690,6 +721,7 @@ footer .footerctn button{
     width: 40px;
     color: #fff;
 }
+
 footer .footerctn button::before {
     content: "";
     width: 70px;
@@ -715,13 +747,14 @@ footer .footerctn button:hover::before {
     transform: skew(-40deg);
 }
 
-.footer1{
-    height:60%;
+.footer1 {
+    height: 60%;
     display: grid;
-    grid-template-columns:repeat(4,1fr) ;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
 }
-.footer1 .footerctn{
+
+.footer1 .footerctn {
     width: 100%;
     height: 100%;
     display: flex;
@@ -729,51 +762,62 @@ footer .footerctn button:hover::before {
     position: relative;
     overflow: hidden;
 }
-.footer1 .footerctn p{
+
+.footer1 .footerctn p {
     font-size: 15px;
 }
-.insta-grid{
+
+.insta-grid {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 5px;
     row-gap: 2px;
     width: 100%;
     height: 45%;
     margin-top: 20px;
 }
-.footer1 .footerctn .insta-pics{
+
+.footer1 .footerctn .insta-pics {
     width: 100%;
     height: 90%;
 }
-.footer1 .footerctn .insta-pics img{
+
+.footer1 .footerctn .insta-pics img {
     width: 100%;
     height: auto;
     transition: 0.3s ease-in-out;
 }
-.footer1 .footerctn .insta-pics img:hover{
+
+.footer1 .footerctn .insta-pics img:hover {
     transform: scale(105%);
 }
-.footer1 .footerctn .social-icons{
+
+.footer1 .footerctn .social-icons {
     width: 100%;
     height: 50px;
 }
-.footer1 .footerctn .social-icons .fa-brands{
+
+.footer1 .footerctn .social-icons .fa-brands {
     margin-right: 10px;
     color: white;
     transition: 0.4s ease-in;
 }
-.footer1 .footerctn .social-icons .fa-brands:hover{
- color:  #fc9846;
+
+.footer1 .footerctn .social-icons .fa-brands:hover {
+    color: #fc9846;
 }
-footer p{
+
+footer p {
     color: white;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: #ffc107;
 }
-footer a:visited{
+
+footer a:visited {
     color: #ffc107;
 }
 

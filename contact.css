@@ -13,7 +13,7 @@ body {
     padding: 5px 30px;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
-    margin: 35px auto 0;
+    margin: 35px 90px;
     max-width: 1100px;
 }
 
@@ -38,7 +38,8 @@ body {
 .navbar li a:hover {
     color: #fd7e14;
 }
-.contact-page1{
+
+.contact-page1 {
     height: 55vh;
     background-image: url('img/banner/common-banner.jpg');
     background-position: center;
@@ -61,6 +62,7 @@ body {
     color: white;
     line-height: 0;
     font-weight: 600;
+    margin-top: 100px;
 }
 
 .text a {
@@ -164,24 +166,28 @@ body {
     transform: translateX(-100px);
     transform: skew(-40deg);
 }
+
 /****************************** CONTACT SECTION END ************************************/
 
 /* ====================== Media Query Start ========================== */
-@media only screen and (min-width: 768px) and (max-width: 992px){
-    .text{
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .text {
         margin-right: 10%;
         margin-top: 18%;
     }
 }
-@media only screen and (max-width: 767px){
-    .banner{
+
+@media only screen and (max-width: 767px) {
+    .banner {
         background-color: none;
     }
-    .navbar ul li{
+
+    .navbar ul li {
         display: block;
         padding: 2px 0px 34px;
     }
-    .navbar{
+
+    .navbar {
         position: absolute;
         background-color: palevioletred;
         height: 100vh;
@@ -192,29 +198,34 @@ body {
         z-index: 2;
         transition: all 1s ease-out;
     }
-    .navbar ul{
+
+    .navbar ul {
         padding: 98px 51px 8px 49px;
     }
+
     /* .navbar ul li a{
         text-decoration: none;
         color: white;
     } */
-.burger{
-    display: block;
-    z-index: 3;
-    position: absolute;
-    top: 15px;
-    right: 5%;
-    cursor: pointer;
-    font-size: 33px;
-    color: #000;
+    .burger {
+        display: block;
+        z-index: 3;
+        position: absolute;
+        top: 15px;
+        right: 5%;
+        cursor: pointer;
+        font-size: 33px;
+        color: #000;
+    }
+
+    .h-class {
+        height: 100vh;
+        opacity: 0;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
 }
-.h-class{
-    height: 100vh;
-    opacity: 0;
-}
-.v-class{
-    opacity: 0;
-}
-}
+
 /* ====================== Media Query End ========================== */
