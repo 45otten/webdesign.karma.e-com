@@ -17,7 +17,7 @@ body {
     padding: 5px 30px;
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
-    margin: 35px 50px;
+    margin: 35px 90px;
     max-width: 1100px;
 }
 
@@ -69,6 +69,7 @@ body {
     color: white;
     line-height: 0;
     font-weight: 600;
+    margin-top: 100px;
 }
 
 .text a {
@@ -155,6 +156,7 @@ body {
 .shop-catpg .shop-catpg1 .shop-cat1-list ul .radio span:hover{
     background-color: #fc8626ef;
     box-shadow: 0 0 10px #fc8626ef ;
+    border: 1px solid #fc8626ef;
     transition: 0.5s ease-out;
 }
 .shop-catpg .shop-catpg1 .shop-cat1-list ul .radio input[type="radio"]:checked ~ span:after{
