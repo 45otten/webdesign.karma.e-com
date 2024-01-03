@@ -38,8 +38,7 @@ body {
 .navbar li a:hover {
     color: #fd7e14;
 }
-
-.contact-page1 {
+.contact-page1{
     height: 55vh;
     background-image: url('img/banner/common-banner.jpg');
     background-position: center;
@@ -167,3 +166,55 @@ body {
 }
 /****************************** CONTACT SECTION END ************************************/
 
+/* ====================== Media Query Start ========================== */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .text{
+        margin-right: 10%;
+        margin-top: 18%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .banner{
+        background-color: none;
+    }
+    .navbar ul li{
+        display: block;
+        padding: 2px 0px 34px;
+    }
+    .navbar{
+        position: absolute;
+        background-color: palevioletred;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: all 1s ease-out;
+    }
+    .navbar ul{
+        padding: 98px 51px 8px 49px;
+    }
+    /* .navbar ul li a{
+        text-decoration: none;
+        color: white;
+    } */
+.burger{
+    display: block;
+    z-index: 3;
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    cursor: pointer;
+    font-size: 33px;
+    color: #000;
+}
+.h-class{
+    height: 100vh;
+    opacity: 0;
+}
+.v-class{
+    opacity: 0;
+}
+}
+/* ====================== Media Query End ========================== */
