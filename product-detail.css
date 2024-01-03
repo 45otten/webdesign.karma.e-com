@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&family=Roboto+Condensed:ital@1&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /****************************** BANNER SECTION START ************************************/
@@ -18,56 +18,57 @@ body {
 }
 
 .logo img {
-    padding: 10px;
+  padding: 10px;
 }
 
 .navbar ul li {
-    display: inline-block;
-    padding: 10px;
-    list-style: none;
+  display: inline-block;
+  padding: 10px;
+  list-style: none;
 }
 
 .navbar li a {
-    font-size: 14px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
+  font-size: 14px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .navbar li a:hover {
-    color: #fd7e14;
+  color: #fd7e14;
 }
-.contact-page1{
-    height: 55vh;
-    background-image: url('img/banner/common-banner.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-direction: column;
-    z-index: -2;
-    display: flex;
+
+.contact-page1 {
+  height: 55vh;
+  background-image: url('img/banner/common-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  z-index: -2;
+  display: flex;
 }
 
 .text {
-    float: right;
-    margin-right: 18%;
-    margin-top: 7%;
+  float: right;
+  margin-right: 18%;
+  margin-top: 7%;
 }
 
 .text h1 {
-    font-size: 36px;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    line-height: 0;
-    font-weight: 600;
-    margin-top: 100px;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  line-height: 0;
+  font-weight: 600;
+  margin-top: 100px;
 }
 
 .text a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
 }
 
 /****************************** BANNER SECTION END ************************************/
@@ -88,7 +89,8 @@ body {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -110,8 +112,9 @@ body {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -158,65 +161,87 @@ body {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
-.single-product{
-    display: flex;
-    justify-content: space-evenly;
+.single-product {
+  display: flex;
+  justify-content: space-evenly;
 }
-.single-product .description{
-    margin-top: 13%;
+
+.single-product .description {
+  margin-top: 13%;
 }
-.description h2{
-    font-size: 30px;
-    font-family: "Popins",sans-serif;
+
+.description h2 {
+  font-size: 30px;
+  font-family: "Popins", sans-serif;
 
 }
 
 .description h1 {
-    font-size: 25px;
-    font-family: "Popins", sans-serif;
-    color: #fd7e14;
-}
-.description span{
-    color: #fd7e14;
-    font-size: 17px;
-}
-.description p{
-    font-size: 18px;
-    line-height: 2;
+  font-size: 25px;
+  font-family: "Popins", sans-serif;
+  color: #fd7e14;
 }
 
-.description input{
-    padding: 5px 2px;
-    border: 1px solid rgba(194, 194, 194, 0.553);
-    border-radius: 5px;
+.description span {
+  color: #fd7e14;
+  font-size: 17px;
 }
+
+.description p {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.description input {
+  padding: 5px 2px;
+  border: 1px solid rgba(194, 194, 194, 0.553);
+  border-radius: 5px;
+}
+
 .description .btn1{
-    padding: 10px 25px;
-    margin-top: 20%;
-    border-radius: 6px;
-    border: 2px solid #fd7e14;
-    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-    color: #fff;
-    font-size: 15px;
-    font-family: "Popins", sans-serif;
+  padding: 10px 25px;
+  margin-top: 20%;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(90deg, #ffba00, #ff6c00);
+  color: #fff;
+  font-size: 15px;
+  font-family: "Popins", sans-serif;
+  border: none;
 }
-.description .btn2{
-    font-size: 15px;
-    background-color: #828bb2;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-left: 10px;
-    align-items: center;
-    color: #fff;
-    border: 1px solid #828bb2;
+.description .btn1:hover{
+  transform: skew(-10deg);
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff6c00, #ffba00);
 }
-.description .btn2:hover{
-    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
-    transition: 0.5s ease-in-out;
-    border: 1px solid #fd7e14;
+.description .btn2 {
+  font-size: 15px;
+  background-color: #828bb2;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  align-items: center;
+  color: #fff;
+  border: none;
+}
+
+.description .btn2:hover {
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  transition: 0.5s ease-in-out;
+  border: 1px solid #fd7e14;
+}
+.description .quantity-text{
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Poppins",sans-serif;
 }
