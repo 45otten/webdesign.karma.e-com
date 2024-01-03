@@ -1,3 +1,14 @@
+// toggle button 
+// burger=document.querySelector('.burger')
+// navbarItems=document.querySelector('.navbar')
+// nav=document.querySelector('.nav')
+
+// burger.addEventListener('click',()=>{
+//     navbarItems.classList.toggle('h-class')
+//     nav.classList.toggle('v-class')
+// })
+// toggle button 
+
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
