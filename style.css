@@ -102,7 +102,7 @@ body {
 }
 
 .homepg1 {
-    height: 100vh;
+    height: 100%;
     /* border: 1px solid black; */
     background-image: url('img/banner/banner-bg.jpg');
     background-position: center;
