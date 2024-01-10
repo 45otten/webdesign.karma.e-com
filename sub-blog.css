@@ -98,7 +98,7 @@ body {
 .sub-menu li:hover a{
     color: #fff !important;
 }
-         /* --------------------Navbar-------------------- */
+/* --------------------Navbar-------------------- */
 .blog-page1 {
     height: 58vh;
     background-image: url('img/banner/common-banner.jpg');
@@ -140,7 +140,9 @@ nav.sticky{
     top: 0%;
     left: 0%;
 }
-/****************************** BANNER SECTION END ************************************/
+
+/* ***************************** BANNER SECTION END *********************************** */
+/*<!--================Blog Categorie Area Styling =================--> */
 
 .container{
     display: flex;
@@ -187,15 +189,19 @@ nav.sticky{
     width: 100%;
     height: 2px;
 }
+/* <!--================Blog Categorie Area Styling End =================--> */
 
-/* ======================================================================================= */
+/* <!--================Left Side Area Styling Start =================--> */
 
 .blog_left_sidebar{
     display: flex;
     margin-top: 7%;
 }
+.row_blog_item{
+    display: flex;
+}
 .blog_info{
-padding: 20px 10px;
+    padding: 20px 10px;
 }
 
 .blog_info {
@@ -250,3 +256,121 @@ line-height: 1.5;
     font-size: 16px;
     font-family: Poppins, sans-serif;
 }
+.blog_detail button{
+    border: 1px solid black;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+/* <!--================Left Side Area Styling End =================--> */
+
+/* <!--================Right Side Area Styling Start =================--> */
+
+.blog_right_sidebar{
+    background-color: #fafaff;
+    margin-top: 7%;
+    margin-left: 20px;
+    border: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog_right_sidebar .search-bar input{
+    padding: 8px 100px 8px 8px;
+    border-radius: 45px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    line-height: 10px;
+    border: 0px;
+    background: #ff9b47;
+    color: white;
+    z-index: 0;
+    margin: 40px 0px 40px 46px;
+}
+.blog_right_sidebar .search-bar button{
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    padding: 8px 0px;
+    padding-right: 10px;
+    border: none;
+    background: #ff9b47;
+    margin-left: -15px;
+    margin-right: 46px 
+}
+.blog_right_sidebar hr{
+    width: 75%;
+    
+}
+
+.profile-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.data{
+    text-align: center;
+    font-family: Poppins,sans-serif;
+    margin-top: 25px;
+}
+.data h4{
+    font-size: 18px;
+}
+.data p{
+    font-size: 14px;
+    line-height: 1px;
+    margin-top: -3%;
+}
+.data .fa-brands{
+    margin-left: 6px;
+    color: #000;
+}
+.blog_right_sidebar .paragraph{
+    text-align: center;
+    font-size: 14px;
+    font-family: Poppins,sans-serif;
+    margin-bottom: 25px;
+}
+
+.popular-post{
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    background-color: #ffc107;
+    width: 80%;
+    margin-top: 25px;
+}
+.popular-post h3{
+    margin: 10px;
+}
+.media-post-item{
+    display: flex;
+    /* flex-direction: column; */
+    margin-top: 25px;
+
+}
+.media-post-item a{
+    text-decoration: none;
+}
+
+.media-post-item h3{
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    margin-left: 5px;
+    margin-top: 0px;
+    font-family: Poppins,sans-serif;
+}
+.media-post-item .media-body p{
+    font-size: 14px;
+    /* line-height: 1px; */
+    margin-top: -10px;
+    font-family: Poppins,sans-serif;
+    margin-left: 5px;
+}
+.media-post-item img{
+    width: 40%;
+    height: 80%;
+}
+
+/* <!--================Right Side Area Styling End =================--> */
