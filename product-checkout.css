@@ -1,0 +1,325 @@
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
+    margin: 35px 90px;
+    max-width: 1100px;
+}
+
+.logo img {
+    padding: 10px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar li a {
+    font-size: 14px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: #fd7e14;
+}
+.sub-menu {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+    background: #fff;
+}
+.sub-menu ul li{
+    padding: 15px 25px;
+    border-bottom: 1px solid #6c6e7463;
+}
+.sub-menu ul li a{
+    font-weight: 700;
+    color: #fd7e14 !important;
+}
+.sub-menu ul{
+    padding-inline-start: 0 ;
+}
+
+.navbar ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+}
+
+.navbar ul li:hover .sub-menu li {
+    display: block;
+}
+
+.sub-menu li:hover{
+    background: linear-gradient(135deg,#ffc107,#fd7e14);
+    transition: 0.5s ease-in-out !important;
+}
+.sub-menu li:hover a{
+    color: #fff !important;
+}
+.product-checkout-main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pro-chckout-1{
+    width: 85%;
+    height: 40%;
+}
+.pro-chckout-1 nav{
+    width: 100%;
+    height: 40px;
+    background-color:#e8f0f2;
+}
+.pro-chckout-1 nav p{
+    font-family: "Robot",sans-serif;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+    padding-bottom: -10px !important;
+}
+.pro-chckout-1 nav p a{
+    color: rgb(255,0,0);
+    font-weight: 500;
+}
+.pro-chckout-1 p{
+    font-family: "Poppins",sans-serif;
+    color: #777777;
+    font-size: 14px;
+    line-height: 3rem;
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: -10px;
+}
+.pro-chckout-1 input{
+    margin: 0 15px !important;
+    padding: 15px 20px;
+    width: 30%;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    margin-top: 10px !important;
+}
+.pro-chckout-1 input:focus{
+    border: 1px solid #fd7e14;
+    outline: 1px solid #fd7e14;
+}
+
+.pro-chckout-1 span input[type="checkbox"]{
+    margin: -160px !important;
+}
+.pro-chckout-1 span input[type="checkbox"]:focus{
+    border: none;
+    outline: none;
+}
+.pro-chckout-1 span label{
+    font-family: "Poppins",sans-serif;
+    font-size: small;
+    color: #000;
+    font-weight: 450;
+}
+.pro-chckout-1 input::placeholder{
+    font-family: "Poppins",sans-serif;
+}
+.pro-chckout-1 input::placeholder:after{
+    content: "*";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    color: #FF0000;
+}
+.pro-chckout-1 input,button{
+    margin: 10px 0 0;
+}
+.pro-chckout-1 button{
+    margin-left: 15px;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.pro-chckout-1 button:before{
+    content: "";
+    width: 70px;
+    height: inherit;
+    position: absolute;
+    background: #00000042;
+    top:0;
+    left: 0;
+    transform: skew(-45deg);
+    opacity: 0;
+    transition: all 0.7s ease 0s;
+}
+.pro-chckout-1 button:hover::before{
+    opacity: 1;
+    transform: translateX(310px) !important;
+}
+.pro-chckout-2{
+    width: 85%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 20px;
+}
+.pro-chckout-2-1{
+    width: 70%;
+    height: inherit;
+}
+.pro-chckout-2-1 input{
+    width: 97%;
+    margin: 10px 5px 10px 0;
+    padding: 15px 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.pro-chckout-2-1 input:focus{
+    outline: 1px solid #fd7e14;
+    border: 1px solid #fd7e14;
+}
+.pro-chckout-2-1 .input-1{
+    padding-right: 0 !important;
+    margin-right: 0;
+    width: 47.7%;
+}
+.pro-chckout-2-1 textarea{
+    width: 703px;
+    height: 60px;
+    padding: 15px;
+    font-family: "Poppins",sans-serif;
+    color: #000;
+    font-weight: 500;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 15px;
+    resize: none;
+}
+.pro-chckout-2-1 textarea:focus{
+    border: 1px solid #fd7e14;
+    outline: 1px solid #fd7e14;
+}
+.pro-chckout-2-1 button{
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.pro-chckout-2-1 button:before{
+    content: "";
+    width: 70px;
+    height: inherit;
+    position: absolute;
+    background: #00000042;
+    top:0;
+    left: 0;
+    transform: skew(-45deg);
+    opacity: 0;
+    transition: all 0.7s ease 0s;
+}
+.pro-chckout-2-1 button:hover::before{
+    opacity: 1;
+    transform: translateX(310px) !important;
+}
+.pro-chckout-2-2{
+    width: 35%;
+    height: inherit;
+    background: #e5ecee;
+    padding: 30px;
+}
+.pro-chckout-2-2 table{
+    width: 100%;
+}
+.pro-chckout-2-2 td{
+    border-bottom: 1px solid #fff;
+}
+.pro-chckout-2-2 table td{
+    padding: 15px 15px 0 0;
+    font-family: "Poppins",sans-serif;
+}
+.pro-chckout-2-2 .table-2 span{
+    font-weight: 500;
+}
+.pro-chckout-2-2 .table-2 td{
+    border: none;
+}
+.payment-methods img{
+    width: 24%;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.payment-methods img:hover{
+    transform: scale(102%);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 10px blue;
+}
+.pro-chckout-2-2 p{
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    color: red;
+}
+.pro-chckout-2-2 span{
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+.pro-chckout-2-2 span a{
+    color: red;
+    font-weight: 400;
+}
+.pro-chckout-2-2 button{
+    padding: 15px 20px;
+    margin-top: 70px;
+    background: linear-gradient(135deg, #ffc107, #fd7e14);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.pro-chckout-2-2 button:before{
+    content: "";
+    width: 70px;
+    height: inherit;
+    position: absolute;
+    background: #00000042;
+    top:0;
+    left: 0;
+    transform: skew(-45deg);
+    opacity: 0;
+    transition: all 0.7s ease 0s;
+}
+.pro-chckout-2-2 button:hover::before{
+    opacity: 1;
+    transform: translateX(500px);
+}

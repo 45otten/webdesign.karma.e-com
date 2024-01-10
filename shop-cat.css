@@ -191,7 +191,6 @@ h2 {
     height: 70px;
     display: flex;
     align-items: center;
-    border: 1px solid orange;
     background-color: #828bb3;
     position: relative;
 }

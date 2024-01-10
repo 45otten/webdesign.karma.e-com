@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop-cat.css">
+    <link rel="stylesheet" href="product-checkout.css">
+    <link rel="shortcut icon" href="img/fav.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>KARMA | Product-checkout</title>
+</head>
+
+<body>
+    <section class="shop-cat-page1">
+        <div class="content">
+            <!---------- BANNER SECTION START ---------------->
+            <section class="banner">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+
+                        <li><a href="#">SHOP</a>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li><a href="shop-cat.html">SHOP CATEGORY</a></li>
+                                    <li><a href="product-detail.html">PRODUCT DETAIL</a></li>
+                                    <li><a href="#">PRODUCT CHEACKOUT</a></li>
+                                    <li><a href="shopping-cart.html">SHOPPING CART</a></li>
+                                    <li><a href="#">CONFIRMATION</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="#">BLOG</a>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li><a href="#">BLOG</a></li>
+                                    <li><a href="#">BLOG DETAIL</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li><a href="#">PAGES</a>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li><a href="#">LOGIN</a></li>
+                                    <li><a href="#">TRAKING</a></li>
+                                    <li><a href="#">ELEMENTS</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    </ul>
+                </div>
+            </section>
+            <!-------------- BANNER SECTION ENDED ---------------->
+            <div class="text">
+                <h1>Product Checkout</h1>
+
+                <a href="#">Home <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                <a href="#">Shop</a> <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                <a href="#">Product Checkout</a>
+            </div>
+        </div>
+    </section>
+    <!----------------------------Product checkout start------------------------------->
+    <section class="product-checkout-main  d-flex-1">
+        <div class="pro-chckout-1">
+            <nav>
+                <p>Returning customer?<a href="#">Click Here to login.</a></p>
+            </nav>
+            <div>
+                <p>
+                    If you have shopped with us before, please enter your details in the boxes below. If you are a new
+                    customer, please proceed to the Billing & Shipping section.
+                </p>
+                <input type="text" placeholder="User name or Email">
+                <input type="text" placeholder="Password"><br>
+                <button>Log In</button> <span><input class="check-box" type="checkbox" name="Remember"> <label
+                    for="Remember">Remember Me</label></span>
+                    <p>Lost your password?</p>
+                </div>
+                <nav>
+                <p>Have A Coupon?<a href="#">Click Here to enter your coupon code.</a></p>
+            </nav>
+            <input type="text" class="coupon-code" placeholder="enter your coupon code here"><br>
+            <button>Apply Coupon</button>
+        </div>
+        <div class="pro-chckout-2">
+            <div class="pro-chckout-2-1">
+                <form action="#">
+                    <h2>Billing Details</h2>
+                    <hr>
+                    <input class="input-1" type="text" placeholder="First name">
+                    <input class="input-1" type="text" placeholder="Last name">
+                    <br>
+                    <input type="text" placeholder="Company Name">
+                    <br>
+                    <input class="input-1" type="text" placeholder="Phone number">
+                    <input class="input-1" type="text" placeholder="Email">
+                    <br>
+                    <input type="" placeholder="Country">
+                    <br>
+                    <input type="text" placeholder="Address 1">
+                    <br>
+                    <input type="text" placeholder="Address 2">
+                    <br>
+                    <input type="text" placeholder="Town/City">
+                    <br>
+                    <input type="text" placeholder="District">
+                    <br>
+                    <input type="text" placeholder="Postal/Zip">
+                    <br>
+                    <button type="submit">Submit</button>
+                    <h2>Shipping Details</h2>
+                    <hr>
+                    <textarea placeholder="Order Description"></textarea>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="pro-chckout-2-2">
+                <h2>Your Order</h2>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Product</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Blackberry</td>
+                        <td>x2</td>
+                        <td>15.00$</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Tomatoes</td>
+                        <td>x5</td>
+                        <td>10.00$</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Brocoli</td>
+                        <td>x2</td>
+                        <td>2.00$</td>
+                    </tr>
+                </table>
+                <table class="table-2">
+                    <tr>
+                        <td><span>Sub total</span></td>
+                        <td>27.00$</td>
+                    </tr>
+                    <tr>
+                        <td><span>Shipping</span></td>
+                        <td>5.00$</td>
+                    </tr>
+                    <tr>
+                        <td><span>Total</span></td>
+                        <td>32.00$</td>
+                    </tr>
+                </table>
+                <div class="payment-methods">
+                    <h2>Payment method</h2>
+                    <hr>
+                    <img src="img/mastercard-icon.png">
+                    <img src="img/visa-icon.png">
+                    <img src="img/Union-pay-icon.png">
+                    <img src="img/paypal-icon.png">
+                    <img src="img/apple-pay.jpg">
+                    <img src="img/g-pay.avif">
+                    <img src="img/american-express.png">
+                    <img src="img/bank-transfer.png">
+                </div>
+                <p>Before procedding kindly read our terms and conditions first and ensure your privacy with us</p>
+                <input type="checkbox"><span>I've read the <a href="#">terms and conditions*</a></span>
+                <button>Proceed</button>
+            </div>
+        </div>
+    </section>
+    <!-----------------------------Product checkout END------------------------------>
+    <!--------------------------------- footer start ----------------------------->
+    
+    <footer>
+        <div class="footer1">
+            <div class="footerctn">
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor,consectetur adipisicing elit. fugit dolore expedita iste rem fuga!</p>
+            </div>
+            <div class="footerctn">
+                <h3>Newsletter</h3>
+                <p>Stay up-to-date about our latest <br> products.</p>
+                <form class="mail">
+                    <input type="email" required placeholder="Your mail">
+                    <button >→</button>
+                </form>
+            </div>
+            <div class="footerctn">
+                <h3>Instagram Feed</h3>
+                <div class="insta-grid">
+                    <div class="insta-pics">
+                        <img src="img/i1.jpg" alt="">
+                    </div>
+                    <div class="insta-pics">
+                        <img src="img/i2.jpg" alt="">
+                    </div>
+                    <div class="insta-pics">
+                        <img src="img/i3.jpg" alt="">
+                    </div>
+                    <div class="insta-pics">
+                        <img src="img/i4.jpg" alt="">
+                    </div>
+                    <div class="insta-pics">
+                        <img src="img/i5.jpg" alt="">
+                    </div>
+                    <div class="insta-pics">
+                        <img src="img/i6.jpg" alt="">
+                    </div>
+                    <div class="insta-pics">
+                        <img src="img/i7.jpg" alt="">
+                    </div>
+                    <div class="insta-pics">
+                        <img src="img/i8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footerctn">
+                <h3>Follow us.</h3>
+                <p>Let us be social</p>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                    <i class="fa-brands fa-x-twitter fa-xl"></i>
+                    <i class="fa-brands fa-telegram fa-xl"></i>
+                    <i class="fa-brands fa-patreon fa-xl"></i>
+                </div>
+            </div>
+        </div>
+        <p class="copyrights"><a href="https://colorlib.com/"> &copy; Colorlib </a></p>
+    </footer>
+
+    <!--------------------------------- footer End ----------------------------->
+</body>
+
+</html>
