@@ -11,7 +11,10 @@ body {
 }
 
 /****************************** BANNER SECTION START ************************************/
+.content{
+    height: 500px;
 
+}
 .banner {
     display: flex;
     justify-content: space-between;
@@ -45,7 +48,7 @@ body {
 }
 
 .shop-cat-page1 {
-    height: 60vh;
+    height: 70vh ;
     background-image: url('img/banner/common-banner.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -58,8 +61,8 @@ body {
 
 .text {
     float: right;
-    margin-right: 18%;
-    margin-top: 7%;
+    margin-right: 13%;
+    margin-top: -25%;
 }
 
 .text .fa-arrow-right-long {
